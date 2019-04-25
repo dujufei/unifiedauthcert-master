@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/account/add/">
+    {% csrf_token %}
+    <input type="text" name="role" placeholder="角色:"/><br>
+{#    <input type="text" name="creator" placeholder="创建者:"/><br>#}
+    <input type="text" name="name" placeholder="姓名:"/><br>
+    <input type="radio" checked ="checked" name="sex" value="1">男
+    <input type="radio" name="sex" value="0">女<br>
+    <input type="text" name="username" placeholder="用户名:"/><br>
+    <input type="password" name="password" placeholder="密  码:"/><br>
+    <input class="tj" type="submit" value="登录"/>
+</form>
+</body>
+</html>

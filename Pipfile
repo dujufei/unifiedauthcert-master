@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+mysqlclient = {path = "D:/mysqlclient-1.4.2-cp36-cp36m-win_amd64.whl"}
+hashlib = "*"
+datetime = "*"
+pyjwt = "==1.7.1"
+django-cors-headers = "*"
+
+[requires]
+python_version = "3.6"
